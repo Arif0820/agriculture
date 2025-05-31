@@ -31,3 +31,13 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+// function Scroll() {
+//    if(window.scrollY > 40) {
+//       const headerdata = document.getElementById("header");
+//             headerdata.style.backgroundColor="red";
+//             headerdata.style.position= "sticky";
+//    }
+// }
+
+// Scroll()
