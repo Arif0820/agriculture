@@ -115,6 +115,9 @@ body {
     font-weight: 400;
     color: #8080807d;
 }
+.service-item .service-item-icon {
+    margin-bottom: 20px;
+}
 .service-item-content h3 {
     font-size: 22px;
 }

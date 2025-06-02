@@ -148,6 +148,9 @@ body {
     border-color: 1px solid rgba(0, 0, 0, 0.345);
 
 }
+.content img {
+    width: 10%;
+}
 .form textarea {
     padding: 10px 12px;
     height: 290px;
