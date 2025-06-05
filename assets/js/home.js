@@ -32,12 +32,34 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-function Scroll() {
-   if(window.scrollY > 10) {
-      headerdata = document.getElementById("header");
-      headerdata.style.backgroundColor="red";
-      headerdata.style.position= "sticky";
-   }
-}
 
-Scroll()
+
+window.addEventListener("scroll" , function Scroll() {
+   if(window.scrollY > 70) {
+      headerdata = document.getElementById("header");
+      headerdata.style.backgroundColor="rgb(247 246 246)";
+   }
+})
+
+
+window.addEventListener("scroll" , function Scroll() {
+   if(window.scrollY < 70) {
+      headerdata = document.getElementById("header");
+      headerdata.style.backgroundColor="white";
+   }
+})
+
+window.addEventListener("scroll" , function Iconscroll() {
+    if(window.scrollY > 100){
+         const icondata = document.querySelector(".scroll-icon i");
+               icondata.style.opacity = "1";
+               icondata.style.overflow = "visible";        
+    }
+})
+window.addEventListener("scroll" , function Iconscroll() {
+    if(window.scrollY < 100){
+         const icondata = document.querySelector(".scroll-icon i");
+               icondata.style.opacity = "0";
+               icondata.style.overflow = "hidden";        
+    }
+})
